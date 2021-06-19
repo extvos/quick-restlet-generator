@@ -1,50 +1,30 @@
-package ${package.Controller};
+package ${controllerPackage};
 
-
-import java.util.List;
-import org.springframework.web.bind.annotation.RequestMapping;
+import ${entityClass};
+import ${serviceClass};
+import com.inodes.restlet.controller.<#if readOnly>BaseROController<#else>BaseController</#if>;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-import org.extvos.common.base.entity.PageParam;
-import org.extvos.common.base.entity.RestResponse;
-import ${package.Entity}.${entity};
-import ${package.Service}.${table.serviceName};
-
-<#if restControllerStyle>
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-<#else>
-import org.springframework.stereotype.Controller;
-</#if>
-<#if superControllerClassPackage??>
-import ${superControllerClassPackage};
-</#if>
+
 
 /**
- * <p>
- * ${table.comment!} 前端控制器
- * </p>
+ * ${controllerComment}
  *
  * @author ${author}
- * @since ${date}
  */
-
-@Api(tags = "${table.comment!}")
-<#if restControllerStyle>
 @RestController
-<#else>
-@Controller
-</#if>
-@RequestMapping("/<#if controllerMappingHyphenStyle??>${controllerMappingHyphen}<#else>${table.entityPath}</#if>")
-<#if kotlin>
-class ${table.controllerName}<#if superControllerClass??> : ${superControllerClass}()</#if>
-<#else>
-<#if superControllerClass??>
-public class ${table.controllerName} extends ${superControllerClass}<${entity}Service,${entity}> {
-<#else>
-public class ${table.controllerName} {
-</#if>
+@RequestMapping("${controllerPrefix}")
+@Api(tags = {"${controllerComment}"})
+public class ${controllerClassName} extends <#if readOnly>BaseROController<#else>BaseController</#if><${entityClassName}, ${serviceClassName}> {
+
+    @Autowired
+    private ${serviceClassName} myService;
+
+    @Override
+    public ${serviceClassName} getService() {
+        return myService;
+    }
 
 }
-</#if>
