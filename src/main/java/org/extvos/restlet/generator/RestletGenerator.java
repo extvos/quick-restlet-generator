@@ -19,7 +19,7 @@ import java.net.URLClassLoader;
 import java.util.List;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 @Mojo(name = "gen", defaultPhase = LifecyclePhase.TEST_COMPILE, requiresDependencyResolution = ResolutionScope.RUNTIME)
 public class RestletGenerator extends AbstractMojo {

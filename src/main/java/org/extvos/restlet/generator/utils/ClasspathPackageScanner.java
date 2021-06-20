@@ -13,7 +13,7 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 public class ClasspathPackageScanner implements PackageScanner {
 

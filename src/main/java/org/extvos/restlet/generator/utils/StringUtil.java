@@ -3,7 +3,7 @@ package org.extvos.restlet.generator.utils;
 import java.net.URL;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 public class StringUtil {
     private StringUtil() {

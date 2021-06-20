@@ -23,7 +23,7 @@ import java.util.Locale;
 import java.util.Map;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 public class Generator {
     private Class<?> cls;

@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import org.apache.maven.plugins.annotations.Parameter;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 @Data
 @NoArgsConstructor

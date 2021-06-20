@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * @author shenmc
+ * @author Mingcai SHEN
  */
 public interface PackageScanner {
     /**
