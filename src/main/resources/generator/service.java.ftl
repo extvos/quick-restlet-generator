@@ -1,7 +1,7 @@
 package ${servicePackage};
 
 import ${entityClass};
-import com.inodes.restlet.service.BaseService;
+import org.extvos.restlet.service.BaseService;
 
 /**
  * ${serviceComment}

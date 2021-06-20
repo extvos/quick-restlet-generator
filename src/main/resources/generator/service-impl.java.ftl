@@ -3,7 +3,7 @@ package ${serviceImplPackage};
 import ${entityClass};
 import ${mapperClass};
 import ${serviceClass};
-import com.inodes.restlet.service.impl.BaseServiceImpl;
+import org.extvos.restlet.service.impl.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

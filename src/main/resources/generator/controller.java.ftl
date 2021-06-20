@@ -2,7 +2,7 @@ package ${controllerPackage};
 
 import ${entityClass};
 import ${serviceClass};
-import com.inodes.restlet.controller.<#if readOnly>BaseROController<#else>BaseController</#if>;
+import org.extvos.restlet.controller.<#if readOnly>BaseROController<#else>BaseController</#if>;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
