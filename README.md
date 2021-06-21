@@ -97,7 +97,7 @@
 
 ```shell
 $ mvn restlet:gen
-$ mvn -Dauthor=INOIDES restlet:gen
+$ mvn -Dauthor=extvos restlet:gen
 $ mvn -DforceOverWrite=true restlet:gen
 ```
 
