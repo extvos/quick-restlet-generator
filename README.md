@@ -20,7 +20,7 @@
 <build>
     <plugins>
         <plugin>
-            <groupId>plus.extvos</groupId>
+            <groupId>io.github.extvos</groupId>
             <artifactId>restlet-maven-plugin</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <executions>
