@@ -1,4 +1,4 @@
-package org.extvos.restlet.generator.dialect;
+package plus.extvos.restlet.generator.dialect;
 
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;
 import com.baomidou.mybatisplus.generator.config.ITypeConvert;

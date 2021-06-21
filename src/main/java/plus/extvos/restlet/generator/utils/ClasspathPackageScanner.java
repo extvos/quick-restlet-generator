@@ -1,4 +1,4 @@
-package org.extvos.restlet.generator.utils;
+package plus.extvos.restlet.generator.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -155,7 +155,7 @@ public class ClasspathPackageScanner implements PackageScanner {
      * For test purpose.
      */
     public static void main(String[] args) throws Exception {
-        PackageScanner scan = new ClasspathPackageScanner("org.extvos.restlet");
+        PackageScanner scan = new ClasspathPackageScanner("plus.extvos.restlet");
         scan.getFullyQualifiedClasses().forEach(cls -> {
             System.out.println(">>> " + cls.getName());
         });

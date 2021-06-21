@@ -1,4 +1,4 @@
-package org.extvos.restlet.generator.gen;
+package plus.extvos.restlet.generator.gen;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

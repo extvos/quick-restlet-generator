@@ -20,7 +20,7 @@
 <build>
     <plugins>
         <plugin>
-            <groupId>org.extvos</groupId>
+            <groupId>plus.extvos</groupId>
             <artifactId>restlet-maven-plugin</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <executions>
@@ -41,26 +41,26 @@
                 
                 <packages> <!-- 至少配置一个需要扫描的包 -->
                     <package>
-                        <source>org.extvos.example</source> <!-- 源Entity所在基础包名,必须项 -->
+                        <source>plus.extvos.example</source> <!-- 源Entity所在基础包名,必须项 -->
                         <!-- 以下为可选项 -->
                         
                         <!-- 作者 -->
                         <author>AUTHOR</author>
                         
                         <!-- 生成文件的目标基础包名,未提供时则使用与source相同的基础包名 -->
-                        <target>org.extvos.example.generated.*</target> 
+                        <target>plus.extvos.example.generated.*</target> 
                         
                         <!-- 生成mapper的目标基础包名，未提供时则根据target生成 {target}.mapper -->
-                        <mapper>org.extvos.example.generated.mapper</mapper>  
+                        <mapper>plus.extvos.example.generated.mapper</mapper>  
                         
                         <!-- 生成service的目标基础包名，未提供时则根据target生成 {target}.service -->
-                        <service>org.extvos.example.generated.service</service>  
+                        <service>plus.extvos.example.generated.service</service>  
                         
                         <!-- 生成serviceImpl的目标基础包名，未提供时则根据target生成 {target}.service.impl -->
-                        <serviceImpl>org.extvos.example.generated.service.impl</serviceImpl>  
+                        <serviceImpl>plus.extvos.example.generated.service.impl</serviceImpl>  
                         
                         <!-- 生成controller的目标基础包名，未提供时则根据target生成 {target}.controller -->
-                        <controller>org.extvos.example.generated.controller</controller>  
+                        <controller>plus.extvos.example.generated.controller</controller>  
                         
                         <!-- 是否只生成只读控制的Controller -->
                         <readOnly>true|false</readOnly>  

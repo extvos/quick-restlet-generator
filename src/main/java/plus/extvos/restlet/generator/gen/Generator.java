@@ -1,11 +1,11 @@
-package org.extvos.restlet.generator.gen;
+package plus.extvos.restlet.generator.gen;
 
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
 import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
-import org.extvos.common.Validator;
-import org.extvos.restlet.generator.utils.StringUtil;
+import plus.extvos.common.Validator;
+import plus.extvos.restlet.generator.utils.StringUtil;
 import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;

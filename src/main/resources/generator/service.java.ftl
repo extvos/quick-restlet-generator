@@ -1,7 +1,7 @@
 package ${servicePackage};
 
 import ${entityClass};
-import org.extvos.restlet.service.BaseService;
+import plus.extvos.restlet.service.BaseService;
 
 /**
  * ${serviceComment}

@@ -1,4 +1,4 @@
-package org.extvos.restlet.generator.config;
+package plus.extvos.restlet.generator.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import lombok.AllArgsConstructor;

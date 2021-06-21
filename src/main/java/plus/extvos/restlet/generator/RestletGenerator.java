@@ -1,9 +1,9 @@
-package org.extvos.restlet.generator;
+package plus.extvos.restlet.generator;
 
-import org.extvos.common.Validator;
-import org.extvos.restlet.generator.gen.Generator;
-import org.extvos.restlet.generator.gen.PackageOption;
-import org.extvos.restlet.generator.utils.ClasspathPackageScanner;
+import plus.extvos.common.Validator;
+import plus.extvos.restlet.generator.gen.Generator;
+import plus.extvos.restlet.generator.gen.PackageOption;
+import plus.extvos.restlet.generator.utils.ClasspathPackageScanner;
 import lombok.SneakyThrows;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;

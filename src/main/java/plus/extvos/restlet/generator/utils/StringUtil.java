@@ -1,4 +1,4 @@
-package org.extvos.restlet.generator.utils;
+package plus.extvos.restlet.generator.utils;
 
 import java.net.URL;
 
