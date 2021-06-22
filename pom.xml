@@ -8,7 +8,7 @@
     <artifactId>restlet-maven-plugin</artifactId>
     <name>quick-restlet-generator</name>
     <description>A generator for quick-lib-restlet</description>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
 
 
@@ -67,7 +67,7 @@
         <dependency>
             <groupId>io.github.extvos</groupId>
             <artifactId>quick-lib-common</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
