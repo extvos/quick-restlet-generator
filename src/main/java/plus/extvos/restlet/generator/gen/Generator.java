@@ -4,8 +4,6 @@ import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
 import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
-import plus.extvos.common.Validator;
-import plus.extvos.restlet.generator.utils.StringUtil;
 import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -15,8 +13,12 @@ import io.swagger.annotations.ApiModel;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.plugin.logging.SystemStreamLog;
+import plus.extvos.common.Validator;
+import plus.extvos.restlet.generator.utils.StringUtil;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Locale;
@@ -181,7 +183,7 @@ public class Generator {
         ftlConf = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
 
         ClassTemplateLoader loader = new ClassTemplateLoader(
-                getClass(), "/generator");
+            getClass(), "/generator");
         ftlConf.setTemplateLoader(loader);
         // Where do we load the templates from:
         // ftlConf.setClassForTemplateLoading(getClass(), "");

@@ -1,9 +1,5 @@
 package plus.extvos.restlet.generator;
 
-import plus.extvos.common.Validator;
-import plus.extvos.restlet.generator.gen.Generator;
-import plus.extvos.restlet.generator.gen.PackageOption;
-import plus.extvos.restlet.generator.utils.ClasspathPackageScanner;
 import lombok.SneakyThrows;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -12,6 +8,10 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
+import plus.extvos.common.Validator;
+import plus.extvos.restlet.generator.gen.Generator;
+import plus.extvos.restlet.generator.gen.PackageOption;
+import plus.extvos.restlet.generator.utils.ClasspathPackageScanner;
 
 import java.io.File;
 import java.net.URL;
@@ -78,8 +78,8 @@ public class RestletGenerator extends AbstractMojo {
                     Generator generator = Generator.from(cls);
                     if (null != generator) {
                         generator.config(getLog())
-                                .config(project.getBasedir() + "/src/main/java", opts)
-                                .generate();
+                            .config(project.getBasedir() + "/src/main/java", opts)
+                            .generate();
                     }
                 }
             } catch (MojoExecutionException e) {
