@@ -22,7 +22,7 @@
         <plugin>
             <groupId>io.github.extvos</groupId>
             <artifactId>restlet-maven-plugin</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
             <executions>
                 <execution>
                     <!-- 指定插件在 compile 后自动执行 -->
