@@ -28,7 +28,7 @@ public class ClasspathPackageScanner implements PackageScanner {
     /**
      * 初始化
      *
-     * @param basePackage
+     * @param basePackage in string
      */
     public ClasspathPackageScanner(String basePackage) {
         this.basePackage = basePackage;
@@ -155,6 +155,8 @@ public class ClasspathPackageScanner implements PackageScanner {
 
     /**
      * For test purpose.
+     * @param args arguments
+     * @throws Exception if error
      */
     public static void main(String[] args) throws Exception {
         PackageScanner scan = new ClasspathPackageScanner("plus.extvos.restlet");

@@ -11,8 +11,10 @@ public class StringUtil {
     }
 
     /**
-     * "file:/home/whf/cn/fh" -> "/home/whf/cn/fh"
-     * "jar:file:/home/whf/foo.jar!cn/fh" -> "/home/whf/foo.jar"
+     * "file:/home/whf/cn/fh" -&gt; "/home/whf/cn/fh"
+     * "jar:file:/home/whf/foo.jar!cn/fh" -&gt; "/home/whf/foo.jar"
+     * @param url url of root
+     * @return String of path
      */
     public static String getRootPath(URL url) {
         String fileUrl = url.getFile();
@@ -26,17 +28,19 @@ public class StringUtil {
     }
 
     /**
-     * "cn.fh.lightning" -> "cn/fh/lightning"
+     * "cn.fh.lightning" -&gt; "cn/fh/lightning"
      *
-     * @param name
-     * @return
+     * @param name in string
+     * @return String of splash
      */
     public static String dotToSplash(String name) {
         return name.replaceAll("\\.", "/");
     }
 
     /**
-     * "Apple.class" -> "Apple"
+     * "Apple.class" -&gt; "Apple"
+     * @param name in String
+     * @return String of extension
      */
     public static String trimExtension(String name) {
         int pos = name.indexOf('.');
@@ -56,10 +60,10 @@ public class StringUtil {
     }
 
     /**
-     * /application/home -> /home
+     * /application/home -&gt; /home
      *
-     * @param uri
-     * @return
+     * @param uri in string
+     * @return String of URI
      */
     public static String trimURI(String uri) {
         String trimmed = uri.substring(1);
